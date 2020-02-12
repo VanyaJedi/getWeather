@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhatWeather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="page-header">
+        <h1>Get information about weather in your location</h1>
+    </header>
+    <main class="page-main">
+        <form class="form" method="post" action="https://localhost:44391/">
+            <input class="city" type="text" id="city" placeholder="type city"/>
+            <button class="button">Show data</button>
+        </form>
+        <ul class="data hidden">
+            <li class="data-item">
+                <span class="data-name">City: </span>
+                <span class="data-result data-result-city"></span>
+            </li>
+            <li class="data-item">
+                <span class="data-name">Temperature: </span>
+                <span class="data-result data-result-temp"></span>
+            </li>
+            <li class="data-item">
+                <span class="data-name">Wind: </span>
+                <span class="data-result data-result-wind"></span>
+            </li>
+        </ul>
+    </main>
+   
+    <script src="script.js"></script>
+</body>
+</html>
